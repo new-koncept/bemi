@@ -1,0 +1,27 @@
+.reference {
+    margin: 20px 20px;
+    display: flex;
+
+    i {
+        margin-left: 10px;
+    }
+}
+
+.reference:nth-child(odd) {
+    h3 {
+        color: lightslategray;
+    }
+    i {
+        align-self: center;
+    }
+}
+
+.reference:nth-child(even) {
+    h3 {
+        color: grey;
+        align-self: center;
+    }
+    i {
+        align-self: center;
+    }
+}

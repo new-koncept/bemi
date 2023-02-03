@@ -1,0 +1,13 @@
+<div class="content">
+    <h2>Pre lepšiu predstavu pre vás pripravíme 3D návrh</h2>
+    <div fxLayout="row wrap">
+        <div *ngFor="let image of images">
+            <mat-card>
+                <mat-card-title>{{image.description}}</mat-card-title>
+                <mat-card-content>
+                    <img [src]=image.src />
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>

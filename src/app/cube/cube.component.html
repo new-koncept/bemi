@@ -1,0 +1,11 @@
+<swiper [effect]="'cube'" [grabCursor]="true" [cubeEffect]="{
+      shadow: true,
+      slideShadows: true,
+      shadowOffset: 20,
+      shadowScale: 0.94
+    }" [pagination]="true" class="mySwiper">
+  <ng-template swiperSlide *ngFor="let cube of cubes">
+    <img src={{cube.image}} />
+    <p>{{cube.name}}</p>
+  </ng-template>
+</swiper>

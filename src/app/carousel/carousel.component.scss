@@ -1,0 +1,16 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5em;
+    height: 840px;
+    width: 640px;
+  }
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 640px;
+    max-width: 640px;
+    
+}

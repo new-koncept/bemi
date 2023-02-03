@@ -1,0 +1,15 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+  <mat-form-field appearance="fill">
+    <mat-select [(value)]="selected">
+      <mat-option *ngFor="let productName of productNames" [value]="productName.value" (click)="selectProductHandler(productName.value)">
+        {{productName.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div fxLayout="row" fxLayoutAlign="center">
+    <div>
+        <app-cube [cubes]="cubes"></app-cube>
+    </div>
+</div>

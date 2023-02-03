@@ -1,0 +1,30 @@
+@use "@angular/material" as mat;
+@import './bemiPalette';
+
+@include mat.core();
+
+$bemi-app-primary: mat.define-palette($md-mcgpalette0);
+$bemi-app-accent: mat.define-palette($md-mcgpalette0, A200, A100, A400);
+$bemi-app-warn: mat.define-palette(mat.$red-palette);
+
+$bemi-app-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $bemi-app-primary,
+      accent: $bemi-app-accent,
+      warn: $bemi-app-warn,
+    ),
+  )
+);
+
+@include mat.all-component-themes($bemi-app-theme);
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: blanchedalmond;
+}
